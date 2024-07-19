@@ -1,6 +1,7 @@
 // import React from 'react'
 import Link from "next/link"
 import Image from "next/image"
+import Button from "./Button";
 import {NAV_LINKS} from "@/app/constants"
 const Navbar = () => {
   return (
@@ -16,10 +17,16 @@ const Navbar = () => {
    </Link>
    </li> 
   ))}
-</ul>
-<div className="lg:flexCenter hidden">
-  <button>click me</button>
+<div className="flex ml-[600px] sm:items-start">
+  <Button
+  type='button'
+  title='log in'
+  icon='/visitrwanda/v2.jpg'
+  // variant='bg-blue-300'
+  />
 </div>
+</ul>
+
 </nav>
 
 
