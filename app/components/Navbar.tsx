@@ -5,7 +5,7 @@ import Button from "./Button";
 import {NAV_LINKS} from "@/app/constants"
 const Navbar = () => {
   return (
-    <nav className="border-2 border-red-500 flexBetween max-conatianer padding-container relative z-30 py-5">
+    <nav className="border-2 border-green-800 flexBetween max-conatianer padding-container relative z-30 py-5">
 <Link href="/">
 <Image src="/visitrwanda/v1.jpg" alt="logo" width={74} height={29}/>
 </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
    </Link>
    </li> 
   ))}
-<div className="flex ml-[600px] sm:items-start">
+<div className="flex ml-[400px] sm:items-start">
   <Button
   type='button'
   title='log in'
@@ -25,6 +25,11 @@ const Navbar = () => {
   // variant='bg-blue-300'
   />
 </div>
+
+<div className=" lg:hidden  sm:block cursor-pointer  ">
+<button className="text-black font-bold ">&#9776;</button>
+</div>
+
 </ul>
 
 </nav>
